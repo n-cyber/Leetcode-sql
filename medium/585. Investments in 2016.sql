@@ -8,6 +8,6 @@ WITH conditions AS (
 )
 
 SELECT 
-  ROUND(SUM(tiv_2016),2) AS tiv_2016
+  CAST(SUM(tiv_2016) AS DECIMAL(10,2)) AS tiv_2016
 FROM conditions
 WHERE count_tiv_2015>1 AND count_location=1
