@@ -12,7 +12,7 @@ AND manager_id NOT IN
 )
 ORDER BY 1
 
--- Approach 2 - using LEFT JOIN
+-- Approach 2 - using LEFT JOIN (Better)
 SELECT 
   e.employee_id
 FROM Employees e LEFT JOIN Employees m
